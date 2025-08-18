@@ -257,7 +257,7 @@ h2 { font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 1.
   display: flex;
   flex-wrap: wrap;
   gap: 2.7rem;
-  justify-content: start;
+  justify-content: center;
   align-items: flex-start;
 }
 .circle-card {
