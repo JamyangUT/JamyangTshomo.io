@@ -69,43 +69,66 @@
   </section>  
 
   <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-title">
-          Integrative Bioinformatics and ML Strategy for Identifying Lung Cancer Biomarkers
-        </div>
+  <section id="projects" class="projects-cards-section">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <!-- Project Card 1 -->
+    <div class="project-card" data-project="1">
+      <div class="card-summary">
+        <div class="project-title">Integrative Bioinformatics and ML Strategy for Identifying Lung Cancer Biomarkers</div>
         <div class="project-desc">
-          I performed differential gene expression (DEGs) analysis on eight datasets using GEO2R. From thousands of genes, significant DEGs were identified based on logFC and p-values. By comparing across datasets, I identified common genes for downstream analysis.
-          <br/>To explore gene interactions, I constructed protein–protein interaction (PPI) networks and identified key hub genes. These hub genes were then further analyzed and evaluated using machine learning models for their potential as biomarkers in lung cancer.
+          Biomarker discovery for lung cancer using a multi-dataset approach.
         </div>
-        
+        <div class="project-tags">
+          <span class="tag">GEO2R</span>
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">Enrichr</span>
+          <span class="tag">KEGG</span>
+        </div>
+        <button class="project-btn" data-learn>Learn More</button>
       </div>
-      <div class="project-card">
-        <div class="project-title">
-          RNA-seq Data Analysis of Keratoconus and Control Myopia Patients
-        </div>
-        <div class="project-desc">
-          I performed RNA-seq data analysis on keratoconus and control myopia patient samples using the Galaxy Web Server. Raw files were processed through FastQC for quality control, followed by HISAT2 for alignment to the reference genome. Differential expression analysis was then carried out with EdgeR, identifying significant genes potentially involved in the pathogenesis of keratoconus. <br/> I also conducted a literature review to contextualize the findings and connect results to current knowledge in the field.        </div>
-        
-      </div>
-      <div class="project-card">
-        <div class="project-title">
-          Biological Database for Hutchinson Gilford Progeria Syndrome (HGPS) using OracleDB
-        </div>
-        <div class="project-desc">
-          I constructed Entity-Relationship (ER) diagrams for designing a biological database focused on HGPS. Extensive research and data retrieval were carried out to collect relevant biological information, which was then organized into attributes and relationships for accurate data modeling. Based on this design, I created a query-enabled database in OracleDB, capable of efficiently storing and retrieving biological data.        </div>
-        
-      </div>
-      <div class="project-card">
-        <div class="project-title">Alcohol Detecting System using Arduino Uno</div>
-        <div class="project-desc">
-          I designed a real-time alcohol detection system using Arduino UNO as the microcontroller. The system was equipped with an MQ-3 gas sensor to detect alcohol vapors in the breath and trigger a response when levels crossed a threshold.
-          I also integrated buzzer and LED indicators to provide immediate alerts.        </div>
+      <div class="card-details" hidden>
+        <div class="project-title"> <br> What I did?</div>
+        <ul class="detail-list">
+          <li> Performed differential gene expression analysis (DEGs) on 8 different datasets of 
+            NSCLC using GEO2R and R Bioconductor</li>
+          <li> Identified key protein–protein interaction networks using STRING and Cytoscape</li>
+          <li> Applied Lasso Regression, Random Forest, and Support Vector Machine to analyze 
+            biomarker potential</li>
+          <li> Identified three key genes involved in the pathogenesis of NSCLC</li>
+        </ul>
+        <button class="project-btn" data-back>Show Less</button>
       </div>
     </div>
-  </section>
+    <!-- Project Card 2 -->
+    <div class="project-card" data-project="2">
+      <div class="card-summary">
+        <div class="project-title">RNA-seq Data Analysis of Keratoconus and Control Myopia Patients</div>
+        <div class="project-desc" >
+          Identification of significant genes and pathways involved in the pathogenesis of Keratoconus.
+        </div>
+        <div class="project-tags">
+          <span class="tag">RNA-seq</span>
+          <span class="tag">Galaxy</span>
+          <span class="tag">Bioinformatics</span>
+        </div>
+        <button class="project-btn" data-learn>Learn More</button>
+      </div>
+      <div class="card-details" hidden>
+        <div class="project-title"><br> What I did?</div>
+        <ul class="detail-list">
+          <li> Literature review for contextualization</li>
+          <li> Performed quality control through FastQC</li>
+          <li> Aligned sequences using HISAT2</li>
+          <li> Conducted differential expression with EdgeR</li>
+        </ul>
+        <button class="project-btn" data-back>Show Less</button>
+      </div>
+    </div>
+    <!-- Add more project cards similarly -->
+  </div>
+</section>
 
   <hr class="section-divider" />
 
