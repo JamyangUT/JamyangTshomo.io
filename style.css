@@ -169,6 +169,93 @@ h2 { font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 1.
   .about-btn { padding: 0.5em 1em; font-size: 1rem; min-width: 100px; }
 }
 
+.skills-section {
+  max-width: 1100px;
+  margin: 2rem auto 2rem auto;
+  padding: 0 1rem;
+}
+.skills-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.1rem;
+  letter-spacing: 0.03em;
+}
+.skills-categories {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-card {
+  border: 2px solid #1a1a1a;
+  border-radius: 0;
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  background: #1a1a1a;
+  min-width: 225px;
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.skills-category-title {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 0.5rem;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.skill-icon-placeholder {
+  width: 48px;
+  height: 48px;
+  border: 1.5px solid #222;
+  border-radius: 5px;
+  background: #fafafa;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Replace with your uploaded icon:
+     background-image: url('icon.png');
+     background-size: 75%;
+     background-position: center;
+     background-repeat: no-repeat;
+  */
+}
+.skill-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #191919;
+}
+
+@media (max-width: 900px) {
+  .skills-categories { gap: 1.1rem;}
+  .skills-card { max-width: 220px; min-width: 160px; }
+}
+@media (max-width: 700px) {
+  .skills-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills-card {
+    max-width: 360px;
+    min-width: 190px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
 .projects-cards-section {
   max-width: 1100px;
   margin: 0 auto 2.7rem auto;
@@ -244,6 +331,7 @@ h2 { font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 1.
   user-select: none;
 }
 .project-btn {
+  margin-top: 1.3rem;  
   background: transparent;
   border: 2px solid #e1c5ff;
   color: #e1c5ff;
@@ -260,7 +348,7 @@ h2 { font-size: 2rem; font-weight: 600; color: var(--primary); margin-bottom: 1.
 }
 .project-btn:hover {
   background: #e1c5ff;
-  color: #4d13bb;
+  color: #9207c9;
   border-color: #e1c5ff;
 }
 .card-details[hidden] {
